@@ -1,0 +1,256 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data:; connect-src 'none'; base-uri 'none'; form-action 'none'">
+  <title>Миндаль — студия маникюра и педикюра</title>
+  <meta name="description" content="Студия маникюра и педикюра «Миндаль»: маникюр, педикюр, наращивание, дизайн. Онлайн-запись, стерильные инструменты, скидка 20% на первый визит.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;1,500&family=Manrope:wght@400;500;600;700&family=Caveat:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Полоска с акцией -->
+  <div class="promo-bar">
+    <span>✦ Скидка 20% на первый визит</span>
+    <button class="promo-bar__btn" type="button" data-book data-promo>Получить скидку →</button>
+  </div>
+
+  <header class="header" id="header">
+    <div class="container header__in">
+      <a href="#top" class="logo">МИНДАЛЬ<small>студия ногтей</small></a>
+      <nav class="nav" id="nav">
+        <a href="#top">Главная</a>
+        <a href="#services">Услуги</a>
+        <a href="#prices">Цены</a>
+        <a href="#gallery">Работы</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="#contacts">Контакты</a>
+      </nav>
+      <button class="btn btn--dark header__cta" type="button" data-book>Записаться <span>→</span></button>
+      <button class="burger" id="burger" type="button" aria-label="Меню"><span></span><span></span></button>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- Первый экран -->
+    <section class="hero">
+      <img class="hero__img" src="img/hero.jpg" alt="Нежный розовый маникюр миндальной формы">
+      <div class="container hero__in">
+        <p class="kicker">Красота на кончиках пальцев</p>
+        <h1>Уверенность<br>в каждом <em>жесте</em></h1>
+        <p class="hero__lead">Аккуратный маникюр и педикюр, дизайн любой сложности и час заботы о себе. Вы приходите отдохнуть, а уходите с идеальными ногтями.</p>
+        <div class="hero__row">
+          <button class="btn btn--dark" type="button" data-book>Записаться <span>→</span></button>
+          <button class="play" type="button" id="open-studio"><i>▶</i> Посмотреть студию</button>
+        </div>
+        <ul class="perks">
+          <li><b>Стерильно</b><span>крафт-пакеты и сухожар</span></li>
+          <li><b>Премиум-материалы</b><span>гель-лаки без запаха</span></li>
+          <li><b>Опытные мастера</b><span>стаж от 5 лет</span></li>
+          <li><b>4,9 на Картах</b><span>более 300 отзывов</span></li>
+        </ul>
+      </div>
+      <p class="note note--hero">Красивые ногти —<br>хорошее настроение ♡</p>
+    </section>
+
+    <!-- Услуги -->
+    <section class="section" id="services">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <p class="kicker">Наши услуги</p>
+            <h2>Побалуйте себя</h2>
+          </div>
+          <a href="#prices" class="link-arrow">Все услуги и цены →</a>
+        </div>
+        <div class="services" id="services-list"></div>
+      </div>
+    </section>
+
+    <!-- Почему мы -->
+    <section class="why">
+      <img class="why__img" src="img/studio.jpg" alt="Мастер делает маникюр в студии">
+      <div class="why__text">
+        <p class="kicker">Почему «Миндаль»</p>
+        <h2>Больше, чем просто маникюр</h2>
+        <div class="why__grid">
+          <div><b>Внимательные мастера</b><p>Слушаем пожелания и подбираем форму под вашу руку.</p></div>
+          <div><b>Безопасно</b><p>Инструменты проходят три этапа обработки, пакеты вскрываем при вас.</p></div>
+          <div><b>Уютная атмосфера</b><p>Мягкие кресла, плед, кофе или чай — пока сохнет покрытие.</p></div>
+          <div><b>Дизайн по вашей идее</b><p>Принесите фото из Pinterest — повторим или придумаем своё.</p></div>
+        </div>
+        <button class="btn btn--rose" type="button" data-book>Записаться на уход <span>→</span></button>
+        <p class="note note--why">Забота о себе<br>вам к лицу</p>
+      </div>
+    </section>
+
+    <!-- Цены -->
+    <section class="section" id="prices">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <p class="kicker">Прайс</p>
+            <h2>Честные цены</h2>
+          </div>
+          <div class="tabs" id="price-tabs" role="tablist"></div>
+        </div>
+        <div class="prices" id="price-list"></div>
+        <p class="prices__note">Цена окончательная: снятие старого покрытия уже включено. Точную стоимость дизайна мастер назовёт до начала работы.</p>
+      </div>
+    </section>
+
+    <!-- Работы -->
+    <section class="section section--soft" id="gallery">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <p class="kicker">Наши работы</p>
+            <h2>Дизайн, который говорит сам</h2>
+          </div>
+          <div class="tabs" id="gallery-tabs"></div>
+        </div>
+        <div class="gallery" id="gallery-list"></div>
+      </div>
+    </section>
+
+    <!-- Акция -->
+    <section class="offer" id="offer">
+      <img class="offer__img" src="img/offer.jpg" alt="">
+      <div class="container offer__in">
+        <p class="kicker">Специальное предложение</p>
+        <h2>Ухоженность. Блеск. Вы.</h2>
+        <p>Скидка 20% на первый визит по промокоду <b class="code" id="promo-code">МИНДАЛЬ20</b>. Потому что красивые ногти — всегда хорошая идея.</p>
+        <div class="offer__row">
+          <button class="btn btn--dark" type="button" data-book data-promo>Получить скидку <span>→</span></button>
+          <button class="btn btn--ghost" type="button" id="copy-code">Скопировать промокод</button>
+        </div>
+      </div>
+      <p class="note note--offer">Маленькие детали —<br>большое счастье ♡</p>
+    </section>
+
+    <!-- Отзывы -->
+    <section class="section" id="reviews">
+      <div class="container">
+        <div class="section__head">
+          <div>
+            <p class="kicker">Что говорят гости</p>
+            <h2>Реальные люди. Красивые ногти.</h2>
+          </div>
+          <div class="arrows">
+            <button type="button" id="rev-prev" aria-label="Предыдущий отзыв">←</button>
+            <button type="button" id="rev-next" aria-label="Следующий отзыв">→</button>
+          </div>
+        </div>
+        <div class="reviews" id="reviews-list"></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer" id="contacts">
+    <div class="container footer__grid">
+      <div>
+        <a href="#top" class="logo">МИНДАЛЬ<small>студия ногтей</small></a>
+        <p class="footer__slogan">Ухоженные руки. Счастливая вы.</p>
+        <button class="btn btn--dark" type="button" data-book>Записаться онлайн <span>→</span></button>
+      </div>
+      <div>
+        <h4>Разделы</h4>
+        <a href="#top">Главная</a><a href="#services">Услуги</a><a href="#prices">Цены</a><a href="#gallery">Работы</a><a href="#reviews">Отзывы</a>
+      </div>
+      <div>
+        <h4>Услуги</h4>
+        <div id="footer-services"></div>
+      </div>
+      <div>
+        <h4>Контакты</h4>
+        <p>ул. Цветочная, 12, 2 этаж</p>
+        <a href="tel:+70000000000">+7 (000) 000-00-00</a>
+        <p>Пн–Сб: 10:00–21:00<br>Вс: 11:00–19:00</p>
+      </div>
+    </div>
+    <div class="container footer__bottom">
+      <span>© 2026 «Миндаль». Сайт-пример, все данные условные.</span>
+      <a href="#top">Наверх ↑</a>
+    </div>
+  </footer>
+
+  <!-- Окно услуги -->
+  <div class="modal" id="service-modal" aria-hidden="true">
+    <div class="modal__box modal__box--service">
+      <button class="modal__close" type="button" data-close aria-label="Закрыть">×</button>
+      <img id="sm-img" src="" alt="">
+      <div class="modal__body">
+        <p class="kicker" id="sm-time"></p>
+        <h3 id="sm-title"></h3>
+        <p id="sm-text"></p>
+        <ul id="sm-list" class="checks"></ul>
+        <div class="sm-foot">
+          <b id="sm-price"></b>
+          <button class="btn btn--dark" type="button" id="sm-book">Записаться на эту услугу <span>→</span></button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Запись -->
+  <div class="modal" id="book-modal" aria-hidden="true">
+    <div class="modal__box">
+      <button class="modal__close" type="button" data-close aria-label="Закрыть">×</button>
+      <form class="book" id="book-form" novalidate>
+        <p class="kicker">Онлайн-запись</p>
+        <h3>Запишитесь за минуту</h3>
+
+        <label class="field">Услуга
+          <select id="b-service" required></select>
+        </label>
+
+        <p class="field-label">Мастер</p>
+        <div class="chips" id="b-masters"></div>
+
+        <p class="field-label">День</p>
+        <div class="chips chips--days" id="b-days"></div>
+
+        <p class="field-label">Время</p>
+        <div class="chips" id="b-times"></div>
+
+        <div class="row2">
+          <label class="field">Имя<input id="b-name" type="text" placeholder="Как к вам обращаться" required></label>
+          <label class="field">Телефон<input id="b-phone" type="tel" placeholder="+7 900 000-00-00" required></label>
+        </div>
+
+        <label class="promo-check"><input type="checkbox" id="b-promo"> Промокод МИНДАЛЬ20 (−20% на первый визит)</label>
+
+        <div class="book__total"><span>Итого</span><b id="b-total">—</b></div>
+        <p class="book__error" id="b-error"></p>
+        <button class="btn btn--dark btn--wide" type="submit">Записаться <span>→</span></button>
+        <p class="book__hint">Демо-версия сайта: заявка никуда не отправляется.</p>
+      </form>
+
+      <div class="book-done" id="book-done">
+        <div class="book-done__icon">✓</div>
+        <h3>Вы записаны!</h3>
+        <p id="b-summary"></p>
+        <button class="btn btn--dark" type="button" data-close>Отлично</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Просмотр фото -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lightbox__close" type="button" data-close aria-label="Закрыть">×</button>
+    <button class="lightbox__nav lightbox__nav--prev" type="button" id="lb-prev" aria-label="Назад">←</button>
+    <figure><img id="lb-img" src="" alt=""><figcaption id="lb-cap"></figcaption></figure>
+    <button class="lightbox__nav lightbox__nav--next" type="button" id="lb-next" aria-label="Вперёд">→</button>
+  </div>
+
+  <div class="toast" id="toast"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>
